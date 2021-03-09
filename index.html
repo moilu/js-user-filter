@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expanding Cards</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <title>User Filter</title>
 </head>
 <body>
-    <h1>Project Starter</h1>
+    <div class="container">
+        <header class="header">
+            <h4 class="title">Filtro de usuarios</h4>
+            <small class="subtitle">Busca por nombre y/o locación</small>
+            <input type="text" class="text" id="filter" placeholder="Búsqueda">
+        </header>
+
+        <ul id="result" class="user-list">
+            <li>
+                <h3>Cargando...</h3>
+            </li>
+        </ul>
+    </div>
 
     <script src="./script.js"></script>
 </body>
